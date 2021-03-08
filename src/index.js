@@ -4,10 +4,12 @@ import { KandyKorner } from './components/KandyKorner';
 import { BrowserRouter as Router } from "react-router-dom"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { ProductsProvider } from './components/products/ProductProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <ProductsProvider />
       <KandyKorner />
     </Router>
   </React.StrictMode>,
